@@ -1,5 +1,4 @@
-import React from "react";
-import styles from "./AvailableMeals.module.css";
+import classes from "./AvailableMeals.module.css";
 import Card from "../UI/Card";
 import MealItem from "./MealItem/MealItem";
 
@@ -41,7 +40,7 @@ const AvailableMeals = () => {
   ));
 
   return (
-    <section className={styles.meals}>
+    <section className={classes.meals}>
       <Card>
         <ul>{mealsList}</ul>
       </Card>

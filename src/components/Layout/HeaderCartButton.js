@@ -1,15 +1,14 @@
-import React from "react";
 import CartIcon from "../Cart/CartIcon";
-import styles from "./HeaderCartButton.module.css";
+import classes from "./HeaderCartButton.module.css";
 
 const HeaderCartButton = (props) => {
   return (
-    <button className={styles.button} onClick={props.onClick}>
-      <span className={styles.icon}>
+    <button className={classes.button}>
+      <span className={classes.icon}>
         <CartIcon />
       </span>
       <span>Your Cart</span>
-      <span className={styles.badge}>4</span>
+      <span className={classes.badge}>3</span>
     </button>
   );
 };
